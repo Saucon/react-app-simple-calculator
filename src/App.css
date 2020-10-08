@@ -2,37 +2,58 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.result {
+  height: 60px;
+  background-color: #FFF;
+  border: 2px solid #bbb; 
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.result p {
+  font-size: 30px;
+  text-align: right;
+  padding: 2px;
+  margin: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+*{box-sizing: border-box}
+.container{width: 400px; 
+           overflow: hidden; 
+           margin: 50px auto
+         }
 
-.App-link {
-  color: #61dafb;
-}
+.display {
+          margin-bottom: 5px;
+      }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.container .show-calculate{border: 2px solid #95A5A6; 
+                      height:50px;
+                      width:100%;
+                      font-size:25px;
+                      line-height: 50px;
+                      padding: 0 10px;
+                      text-align: right;
+                      pointer-events: none;
+                    }
+.container .box{width: 25%;
+                height: 50px;
+                float: left;
+                border: 2px solid #FFF; 
+                font-size: 25px;
+                line-height: 50px; 
+                text-align: center;
+                font-family: sans-serif;
+                transition: all .25s ease-in-out;
+                background-color: #4FAF54;
+                color: #fff; 
+                cursor: pointer;
+              }
+.container .box:hover{background: #b4fdba}
+
+.container .box-opr{background: #575455}
+
+.container .box-reset ,.container .box-result{width: 100%}
+
+.container .box-reset{background: #446CB3}
+.container .box-clear{background: #EE4234} 
+.container .box-result{background: #358DBB}
